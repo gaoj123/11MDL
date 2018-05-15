@@ -46,3 +46,5 @@ def run(filename):
     else:
         print "Parsing failed."
         return
+
+run("test.mdl")

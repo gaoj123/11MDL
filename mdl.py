@@ -327,6 +327,13 @@ def parseFile(filename):
         result = (commands[:], deepcopy(symbols))
         commands = []
         symbols = {}
+        #print result[0][1]
+        #result[1] symbol list
+        #result[0] commands
+        for i in range(len(result[0])):
+            c=result[0][i][0]
+            if c=="pop" or c=="push":
+                p_command_stack(c)
         return result
     except IOError:
         return ()

@@ -1,0 +1,27 @@
+push
+move 250 300 0
+sphere 0 0 0 130
+push
+move 25 0 10
+rotate x 90
+rotate z 25
+torus 0 0 0 10 135
+pop
+push
+move 0 -135 0
+rotate y 10
+rotate x 10
+box -25 0 0 40 80 30
+push
+move 0 -80 0
+torus 0 0 0 10 100
+torus 0 0 0 10 90
+torus 0 0 0 10 80
+torus 0 0 0 10 70
+torus 0 0 0 10 60
+torus 0 0 0 10 50
+torus 0 0 0 10 40
+torus 0 0 0 10 30
+torus 0 0 0 10 20
+display
+save globe.png

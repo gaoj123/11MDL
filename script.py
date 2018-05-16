@@ -15,7 +15,7 @@ def run(filename):
                50]
     light = [[0.5,
               0.75,
-              1],
+              1],#[0,191,255]]
              [0,
               255,
               255]]
@@ -122,7 +122,7 @@ def run(filename):
                 if line == 'display':
                     display(screen)
                 else:
-                    save_extension(screen, c[0]+c[1])
+                    save_extension(screen, c[1]+c[2])
     else:
         print "Parsing failed."
         return
